@@ -19,7 +19,6 @@
 /* Left container */
 .left-container {
   position: relative;
-  background-color: red;
   height: 100vh;
   width: 30%;
   background-image: url(images/halie-west-original.jpg);

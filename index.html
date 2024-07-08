@@ -53,51 +53,89 @@
         </div>
         <!-- Section 2 -->
         <div class="section-two">
-
-          <div class="section-two-form-container">
-            <div class="form-header">
-              <p>Let's do this!</p>
+          <form id="form" action="index.php" method="post">
+            <div class="section-two-form-container">
+              <div class="form-header">
+                <p>Let's do this!</p>
+              </div>
+              <!-- Row One -->
+              <div class="form-row-one">
+                <div class="form-first-name">
+                  <label for="first-name"> FIRST NAME</label>
+                  <input
+                    name="first-name"
+                    id="first-name"
+                    type="text"
+                    placeholder="Tester"
+                    required
+                  />
+                </div>
+                <div class="form-last-name">
+                  <label for="last-name"> LAST NAME</label>
+                  <input
+                    name="last-name"
+                    id="last-name"
+                    type="text"
+                    placeholder="Test"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Row Two -->
+              <div class="form-row-two">
+                <div class="form-email">
+                  <label for="email"> E-MAIL</label>
+                  <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="tester@mail.com"
+                    required
+                  />
+                </div>
+                <div class="form-phone-number">
+                  <label for="phone-number"> PHONE NUMBER</label>
+                  <input
+                    name="phone-number"
+                    id="phone-number"
+                    type="tel"
+                    placeholder="+44XXXXXXXXX"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- Row Three -->
+              <div class="form-row-three">
+                <div class="form-password">
+                  <label for="password"> PASSWORD</label>
+                  <input
+                    name="password"
+                    id="password"
+                    type="password"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+                <div class="form-confirm-password">
+                  <label for="confirm-password"> CONFIRM PASSWORD</label>
+                  <input
+                    name="confirm-password"
+                    id="confirm-password"
+                    type="password"
+                    placeholder="********"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-            <!-- Row One -->
-            <div class="form-row-one">
-              <div class="form-first-name">
-                <label for="first-name"> FIRST NAME</label>
-                <input id="first-name" type="text" placeholder="Tester" />
-              </div>
-              <div class="form-last-name">
-                <label for="last-name"> LAST NAME</label>
-                <input id="last-name" type="text" placeholder="Test" />
-              </div>
-            </div>
-            <!-- Row Two -->
-            <div class="form-row-two">
-              <div class="form-email">
-                <label for="email"> E-MAIL</label>
-                <input id="email" type="email" placeholder="tester@mail.com" />
-              </div>
-              <div class="form-phone-number">
-                <label for="phone-number"> PHONE NUMBER</label>
-                <input id="phone-number" type="tel" placeholder="+44XXXXXXXXX" />
-              </div>
-            </div>
-            <!-- Row Three -->
-            <div class="form-row-three">
-              <div class="form-password">
-                <label for="password"> PASSWORD</label>
-                <input id="password" type="text" placeholder="********" />
-              </div>
-              <div class="form-confirm-password">
-                <label for="confirm-password"> CONFIRM PASSWORD</label>
-                <input id="confirm-password" type="text" placeholder="********" />
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
 
         <div class="section-three">
-            <button class="create-account">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-          
+          <button class="create-account" type="submit" form="form">
+            Create Account
+          </button>
+          <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
     </div>

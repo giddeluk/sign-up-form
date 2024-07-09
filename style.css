@@ -49,6 +49,7 @@
 .credit {
   position: absolute;
   bottom: 3px;
+  text-align: center;
   left: 20%;
   color: white;
 }
@@ -107,6 +108,8 @@ input{
   width: 25vw;
   padding: 0.3rem;
   border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  outline: none;
 }
 .form-row-one, .form-row-two, .form-row-three{
   display: flex;
@@ -177,4 +180,21 @@ label{
   padding: calc(1vw + 0.1rem);
 }
 }
-/* Media queries are yet to be comitted */
+/* Form Validation */
+input:focus{
+  border: 0.2px solid #7070e7;
+  box-shadow: 0.1px 0.1px 2.5px 0.2px #7070e7;
+}
+#password:invalid, #confirm-password:invalid{
+  border: 1px solid red;
+}
+#password:invalid + span::before{
+  content: "*Passwords do not match";
+  color: red;
+  font-size: 80%;
+}
+#confirm-password:invalid + span::before{
+  content: "*Passwords do not match";
+  color: red;
+  font-size: 80%;
+}
